@@ -280,4 +280,8 @@
   height: 1px;
   background-color: #E7E7E7;
 }
+
+.flex.form .divider.padded {
+  margin: 13px 0 9px 0;
+}
 /*# sourceMappingURL=flex.form.css.map */
