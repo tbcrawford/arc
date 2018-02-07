@@ -10,4 +10,4 @@ Examples of what Flex Form provides can be found in the `example/` folder.
 
 ### Accessing the Examples
 Using the following URL, you can view examples. Developer tools, or looking at the source code in the example folder may be necessary to see how to use the provided css classes.
-https://tbcrawford.github.io/flex-form/example/`<name-of-html-file-in-example-folder></name-of-html-file-in-example-folder>`
+`https://tbcrawford.github.io/flex-form/example/[name-of-html-file-in-example-folder]`
