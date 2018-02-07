@@ -9,4 +9,5 @@ Flex Form does not currently support Internet Explorer or Edge, though future su
 Examples of what Flex Form provides can be found in the `example/` folder.
 
 ### Accessing the Examples
-Using a text editor like [VSCode](https://code.visualstudio.com/), or [Atom](https://atom.io/), you can download a live server tool ([Live Server VSCode](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) | [Atom Live Server](https://atom.io/packages/atom-live-server)) to start up a local server and browse the examples.
+Using the following URL, you can view examples. Developer tools, or looking at the source code in the example folder may be necessary to see how to use the provided css classes.
+https://tbcrawford.github.io/flex-form/example/`<name-of-html-file-in-example-folder></name-of-html-file-in-example-folder>`
