@@ -5,8 +5,7 @@
 .flex.form .fields {
   display: grid;
   margin: 5px 0;
-  overflow: auto;
-  grid-gap: 5px;
+  grid-gap: 15px;
   grid-template-columns: repeat(16, 1fr);
 }
 
@@ -142,9 +141,31 @@
 }
 
 .flex.form .fields > .inline.field input,
-.flex.form .fields > .inline.field select {
+.flex.form .fields > .inline.field select,
+.flex.form .fields > .inline.field .field-item {
   flex: 1 1 0;
   min-width: 20px;
+}
+
+.flex.form .fields > .date.field {
+  align-items: center;
+  align-content: center;
+  display: grid;
+  margin: 3px 0;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+
+.flex.form .fields > .date.field label {
+  grid-column: span 16;
+}
+
+.flex.form .fields > .date.field input {
+  grid-column: span 15;
+}
+
+.flex.form .fields > .date.field img {
+  grid-column: span 1;
 }
 
 .flex.form .fields > .field {
@@ -152,7 +173,7 @@
   align-content: center;
   display: grid;
   margin: 3px 0;
-  grid-gap: 5px;
+  grid-gap: 3px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
 }
@@ -168,7 +189,8 @@
 }
 
 .flex.form .fields > .field input,
-.flex.form .fields > .field select {
+.flex.form .fields > .field select,
+.flex.form .fields > .field .field-item {
   min-width: 20px;
   grid-column: 1 / -1;
 }
@@ -213,7 +235,8 @@
 }
 
 .flex.form > .inline.field input,
-.flex.form > .inline.field select {
+.flex.form > .inline.field select,
+.flex.form > .inline.field .field-item {
   flex: 1;
   min-width: 100px;
 }
@@ -249,7 +272,7 @@
   align-content: center;
   display: grid;
   margin: 3px 0;
-  grid-gap: 5px;
+  grid-gap: 3px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
 }
@@ -262,7 +285,8 @@
 }
 
 .flex.form > .field input,
-.flex.form > .field select {
+.flex.form > .field select,
+.flex.form > .field .field-item {
   grid-column: 1 / -1;
 }
 

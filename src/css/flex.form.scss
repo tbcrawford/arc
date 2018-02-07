@@ -1,12 +1,14 @@
+$space-between-fields: 15px;
+$space-between-field-items: 3px;
+
 .flex.form {
     margin: 5px 11px;
 
     .fields {
         display: grid;
         margin: 5px 0;
-        overflow: auto;
 
-        grid-gap: 5px;
+        grid-gap: $space-between-fields;
         grid-template-columns: repeat(16, 1fr);
 
         &.two {
@@ -19,7 +21,7 @@
                 }
             }
         }
-    
+
         &.three {
             display: grid;
 
@@ -154,9 +156,34 @@
             }
 
             input,
-            select {
+            select,
+            .field-item {
                 flex: 1 1 0;
                 min-width: 20px;
+            }
+        }
+
+         > .date.field {
+            align-items: center;
+            align-content: center;
+            display: grid;
+            margin: 3px 0;
+
+            // grid-gap: $grid-gap;
+
+            grid-template-columns: repeat(16, 1fr);
+            grid-template-rows: repeat(2, auto);
+
+            label {
+                grid-column: span 16;
+            }
+
+            input {
+                grid-column: span 15;
+            }
+
+            img {
+                grid-column: span 1;
             }
         }
 
@@ -166,7 +193,7 @@
             display: grid;
             margin: 3px 0;
 
-            grid-gap: 5px;
+            grid-gap: $space-between-field-items;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, auto);
 
@@ -182,7 +209,8 @@
             }
 
             input,
-            select {
+            select,
+            .field-item {
                 min-width: 20px;
 
                 grid-column: 1 / -1;
@@ -229,7 +257,8 @@
         }
 
         input,
-        select {
+        select,
+        .field-item {
             flex: 1;
             min-width: 100px;
         }
@@ -267,7 +296,7 @@
         display: grid;
         margin: 3px 0;
 
-        grid-gap: 5px;
+        grid-gap: $space-between-field-items;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, auto);
 
@@ -278,8 +307,10 @@
 
             grid-column: 1 / -1;
         }
+
         input,
-        select {
+        select,
+        .field-item {
             grid-column: 1 / -1;
         }
     }
@@ -302,5 +333,4 @@
             margin: 13px 0 9px 0;
         }
     }
-    
 }
