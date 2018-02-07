@@ -1,0 +1,1755 @@
+/* Eric Meyer's CSS Reset */
+
+/* Removes automatic browser treatments of elements
+   so we can safely apply our own. Promotes consistency. */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1.25;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* End of Eric Meyer's CSS Reset */
+
+/* Penske's Internal Common CSS*/
+
+/* Primary headlines */
+
+h1,
+.ui-dialog-title {
+    color: #828282;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+h1.pageTitle {
+    color: #2D73CF;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+/* Secondary headlines*/
+
+h2 {
+    color: #828282;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+fieldset > h2 {
+    margin: 0;
+}
+
+fieldset label {
+    font-weight: normal;
+}
+
+/* Form field labels, table column headers */
+
+h3 {
+    color: #454545;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#footer p,
+.fine {
+    color: #666666;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.evenRow .fine,
+.even .fine,
+.oddRow .fine,
+.odd .fine {
+    color: #454545;
+}
+
+p {
+    color: #454545;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+p,
+li {
+    line-height: 130%;
+}
+
+/* Line */
+
+hr {
+    height: 1px;
+    color: #E7E7E7;
+    background-color: #E7E7E7;
+    border: none;
+}
+
+fieldset {
+    padding-top: 5px;
+    padding-left: 5px;
+    border: 1px solid #E7E7E7;
+}
+
+legend {
+    color: #454545;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Used for one column display */
+
+.oneColumn {
+    width: 95%;
+    height: 95%;
+    border: 1px solid black;
+}
+
+.twoColumnContainer {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    display: inline-block;
+    display: inline-block;
+    width: 49.5%;
+    padding-left: 5px;
+}
+
+.threeColumnContainer {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    display: inline-block;
+    display: inline-block;
+    width: 33%;
+    padding-left: 5px;
+}
+
+.fourColumnContainer {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    display: inline-block;
+    width: 24.5%;
+    padding-left: 5px;
+}
+
+body,
+dd {
+    padding: 0;
+    margin: 4px;
+    color: #454545;
+    font-family: Arial, Verdana;
+    font-size: 13px;
+    font-weight: normal;
+    border: 0 0 0 5px;
+}
+
+table {
+    border-collapse: collapse;
+
+    empty-cells: show;
+}
+
+.handCursor {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.notification {
+    padding-left: 14px;
+    color: #FF6319;
+    font-weight: bold;
+    background: transparent url(../images/email.png) center left no-repeat;
+}
+
+.notification.alert {
+    background-image: url(../images/email_new.png);
+}
+
+#header {
+    position: relative;
+    min-width: 1000px;
+    min-width: 990px\0/;
+    /* IE8 hack */
+}
+
+a {
+    color: #2D73CF;
+    font-size: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+    cursor: hand;
+}
+
+a:visited {
+    color: #5B46A1;
+}
+
+a:hover {
+    color: #4159AF;
+}
+
+nav + #mainContent {
+    border-top-width: 29px;
+}
+
+nav {
+    position: relative;
+    z-index: 1;
+    -webkit-box-sizing: border-box;
+
+/* IE8 hack */
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    min-width: 990px;
+    min-width: 910px\0/;
+}
+
+nav > ul > li:first-child {
+    margin-left: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav > ul > li {
+    margin-right: 1px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #F3F3F3;
+}
+
+nav ul li a,
+nav ul li a:visited {
+    display: block;
+    padding: 6px 10px;
+    color: #666666;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #666666;
+    text-decoration: underline;
+}
+
+nav ul li.current > a {
+    color: #2D73CF;
+    background-color: #E7E7E7;
+    cursor: default;
+}
+
+nav ul li.current > a:hover {
+    text-decoration: none;
+}
+
+nav ul li ul {
+    position: absolute;
+    left: 25px;
+    display: none;
+    text-align: left;
+    background-color: #E7E7E7;
+}
+
+nav ul li.current ul {
+    display: block;
+}
+
+nav ul li ul li {
+    margin-right: 9px;
+}
+
+.leftNav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    float: left;
+    width: 150px;
+    height: 100%;
+    padding: 0 0 0 10px;
+    background-color: #F3F3F3;
+}
+
+.leftNavAdjacentContainer {
+    padding-left: 5px;
+    margin-left: 150px;
+}
+
+.leftNavGroup {
+    position: relative;
+    left: -15px;
+    width: 160px;
+    padding: 3px 6px 3px 4px;
+    font-weight: bold;
+}
+
+div.leftNav div a {
+    color: #666666;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+div.leftNav div a:hover {
+    color: #666666;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+div.leftNav > div {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+}
+
+div.leftNav div a:hover {
+    color: #666666;
+}
+
+div.leftNav > hr {
+    position: relative;
+    left: -15px;
+    width: 165px;
+}
+
+.activeLeftNav,
+.expandableContent {
+    color: #2D73CF !important;
+    font-weight: bold !important;
+}
+
+.activeLeftNav:hover {
+    color: #4159AF;
+    font-weight: bold;
+}
+
+.subNavRow {
+    height: 27px;
+    vertical-align: middle;
+    white-space: nowrap;
+    background-color: #E7E7E7;
+}
+
+.evenRow,
+.even {
+    height: 35px;
+    background-color: #EBEBEB;
+}
+
+.oddRow,
+.odd,
+.oddRowNoBorder,
+.oddNoBorder {
+    height: 35px;
+}
+
+.secondaryRow {
+    margin-top: -10px !important;
+}
+
+.secondaryRowWindow {
+    margin-top: -2px !important;
+}
+
+td,
+th {
+    padding: 1px;
+}
+
+.tableLeftBorder {
+    border-left: 1px solid white;
+}
+
+.tableRightBorder {
+    border-right: 1px solid white;
+}
+
+.tableBottomBorder {
+    border-bottom: 1px solid white;
+}
+
+.tableTopBorder {
+    border-top: 1px solid white;
+}
+
+.tableBorder {
+    border: 1px solid white;
+}
+
+.evenRow td,
+.oddRow td,
+.even td,
+.odd td {
+    height: 35px;
+    color: #454545;
+    font-size: 13px;
+    text-align: left;
+}
+
+.oddRowNoBorder td,
+.oddRowNoBorder td {
+    color: #333333;
+    font-size: 13px;
+    text-align: left;
+}
+
+/* For use when we have an editable field in the first column, we want a right border*/
+
+td.editable {
+    padding: 0 !important;
+    white-space: nowrap;
+    border-right: 1px solid #CECECE;
+}
+
+.borderLeft {
+    border-left: 20px solid #E7E7E7;
+}
+
+.borderRight {
+    border-right: 20px solid #E7E7E7;
+}
+
+.borderTop {
+    border-top: 20px solid #E7E7E7;
+}
+
+.borderBottom {
+    border-bottom: 20px solid #E7E7E7;
+}
+
+.fullBorder {
+    border: 20px solid #E7E7E7;
+}
+
+.hint {
+    padding-left: 5px;
+    color: #454545;
+    font-size: 11px;
+    font-style: italic;
+}
+
+#mainContent {
+    position: relative;
+    -webkit-box-sizing: border-box;
+
+/* IE8 hack */
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    min-width: 990px;
+    min-width: 910px\0/;
+    min-height: 600px;
+    padding: 11px 15px;
+    border: 20px solid #E7E7E7;
+}
+
+/* margins that mimic ff browser default */
+
+#mainContent h1 {
+    margin: 0.67em 0;
+}
+
+#mainContent h2 {
+    margin: 0.83em 0;
+}
+
+#mainContent h3 {
+    margin: 1em 0;
+}
+
+#mainContent p,
+#mainContent ul,
+#mainContent ol,
+#mainContent dl {
+    margin: 1em 0;
+}
+
+/* fixes the too much margin at the top of the box problem */
+
+#mainContent h1:first-child,
+#mainContent h2:first-child,
+#mainContent h3:first-child,
+#mainContent p:first-child,
+#mainContent ul:first-child,
+#mainContent ol:first-child {
+    margin-top: 0;
+}
+
+#mainContent ul,
+#mainContent ol,
+.ui-dialog-content ul,
+.ui-dialog-content ol {
+    margin-left: 40px;
+    list-style: disc;
+}
+
+/* Corrects for margin differences between #mainContent styles and plugin styles */
+
+#mainContent .ui-accordion-header {
+    margin: inherit;
+}
+
+#mainContent .ui-accordion .ui-accordion-content {
+    padding-top: 2em;
+}
+
+#mainContent .jstree ul {
+    margin: inherit;
+}
+
+#mainContent .ui-tabs .ui-tabs-nav {
+    margin: inherit;
+}
+
+#mainContent .swMain ul.anchor {
+    margin: 10px 0;
+}
+
+#mainContent .swMain p:first-child {
+    margin-top: 1em;
+}
+
+/**/
+
+.popupContent {
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+#title {
+    width: 435px;
+    padding-top: 2px;
+    margin-bottom: 10px;
+    margin-left: 140px;
+
+/* formerly 550px */
+    overflow: hidden;
+    color: #666666;
+    font-size: 11px;
+}
+
+.cobranded #title {
+    width: 340px;
+    padding-top: 10px;
+    margin-bottom: 12px;
+}
+
+#utility {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    color: #666666;
+    font-size: 11px;
+}
+
+#utility .user {
+    display: inline-block;
+    width: 213px;
+    overflow: hidden;
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+
+/* Ensures the right part of our header is fixed to right side of screen regadless of content */
+
+#utility > div > ul.utility-list {
+    position: absolute;
+    right: 0;
+}
+
+#utility > div {
+    width: 395px;
+    padding-top: 6px;
+    margin-top: 6px;
+    border-top: 1px solid #E7E7E7;
+}
+
+#utility > div:first-child {
+    padding-top: 0;
+    margin-top: 0;
+    border: none;
+}
+
+#utility > div > * {
+    margin-left: 10px;
+}
+
+#utility > div > *:first-child {
+    margin-left: 0;
+}
+
+ul.utility-list,
+ul.utility-list li {
+    display: inline;
+}
+
+ul.utility-list li:before {
+    padding: 0 11px 0 8px;
+    content: "|";
+}
+
+ul.utility-list li:first-child:before {
+    padding: 0;
+    content: "";
+}
+
+#utility a:visited,
+ul.utility-list a:visited,
+span.addRow > a {
+    color: #2D73CF;
+}
+
+#quickSearch {
+    position: absolute;
+    right: 0;
+    color: #666666;
+    font-size: 11px;
+}
+
+#utility > a:visited,
+#rightFooter > span > a:visited,
+#leftFooter > a:visited,
+#rightFooter > a:visited {
+    color: #2D73CF !important;
+}
+
+textarea {
+    color: #454545;
+    font-family: Arial, Verdana;
+    font-size: 13px;
+    font-style: normal;
+    background-color: #FFFFFF;
+}
+
+th {
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: bottom !important;
+    background-color: #CDCDCD;
+}
+
+td {
+    font-size: 13px;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.textAreaLabel {
+    color: #454545;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+textarea,
+select,
+input[type="text"] {
+    border: 1px solid #ABABAB;
+}
+
+input[type="text"] {
+    color: #454545;
+    font-size: 13px;
+    font-style: normal;
+    background-color: #FFFFFF;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0;
+    vertical-align: middle;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 4px;
+}
+
+input[type="text"],
+select {
+    margin-bottom: 10px;
+}
+
+input[type="file"],
+input[type="file"]:focus {
+    outline-width: 0;
+}
+
+.textLabel {
+    color: #454545;
+    font-family: arial, verdana;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+label {
+    margin-right: 10px;
+    color: #454545;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+dt {
+    float: left;
+    margin-right: 10px;
+    clear: left;
+    color: #454545;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.supportingTextLabel {
+    color: #454545;
+    font-size: 12px;
+    font-style: italic;
+}
+
+input[type="text"][disabled] {
+    color: #454545;
+    font-size: 13px;
+    font-style: italic;
+    background-color: #FFFFFF;
+}
+
+/* Used for Text Inputs which have validation errors */
+
+.textFieldError {
+    color: #454545;
+    font-size: 13px;
+    font-style: normal;
+    background-color: #F7D9D9;
+}
+
+.errorMsgInput {
+    color: #454545;
+    font-size: 13px;
+    background-color: #F7D9D9 !important;
+}
+
+.requiredField {
+    padding-right: 2px;
+    padding-left: 2px;
+    color: #CC0000;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.buttonPrimary {
+    display: -moz-inline-box;
+
+/* Needed to use the min-width */
+    display: inline-block;
+
+/* Needed to use the min-width */
+    min-width: 100px;
+    padding: 5px;
+    color: #FFFFFF !important;
+    font-size: 13px !important;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none !important;
+    background-color: #69BC28;
+}
+
+.buttonPrimary:hover {
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: #69BC28;
+}
+
+.buttonSecondary {
+    display: -moz-inline-box;
+
+/* Needed to use the min-width */
+    display: inline-block;
+
+/* Needed to use the min-width */
+    min-width: 100px;
+    padding: 5px;
+    color: #FFFFFF !important;
+    font-size: 13px !important;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none !important;
+    background-color: #2D73CF;
+}
+
+.buttonSecondary:hover {
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: #2D73CF;
+}
+
+.buttonDisabled {
+    display: -moz-inline-box;
+
+/* Needed to use the min-width */
+    display: inline-block;
+
+/* Needed to use the min-width */
+    min-width: 100px;
+    padding: 5px;
+    color: #454545 !important;
+    font-size: 13px !important;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none !important;
+    background-color: #CECECE;
+    cursor: default;
+}
+
+.buttonDisabled:hover {
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none !important;
+    background-color: #CECECE;
+    cursor: default;
+}
+
+.secondaryLink {
+    color: #2D73CF !important;
+}
+
+/* Used for Error Text below invalid text input */
+
+.errorMsg {
+    color: #CC0000;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.centerAlign,
+.centerAlign td {
+    text-align: center !important;
+}
+
+.rightAlign,
+.rightAlign td {
+    text-align: right !important;
+}
+
+.topAlign {
+    vertical-align: top;
+}
+
+.leftAlign {
+    text-align: left !important;
+}
+
+.inline {
+    display: inline;
+}
+
+.displayNone,
+.hidden {
+    display: none;
+}
+
+.displayBlock {
+    display: block;
+}
+
+/* Default for NON co-branded application names*/
+
+#title h1 {
+    padding-bottom: 5px;
+    margin: 0;
+    color: #2D73CF;
+    font-size: 37px;
+    font-style: normal;
+    line-height: 44px;
+    white-space: nowrap;
+}
+
+/* Use for co-branded application name or if application name is too large to fit with 37px*/
+
+#title h1.medium,
+#title h1.cobranded {
+    margin-top: 1px;
+    font-size: 28px;
+    line-height: 33px;
+}
+
+/* Use for application name when 37px/28px are too large*/
+
+#title h1.small {
+    font-size: 24px;
+}
+
+#title h1.qa {
+    color: #522398;
+}
+
+#title h1.training {
+    color: #69BC28;
+}
+
+/* For accordion control, underline link when hovered */
+
+h3.ui-state-default:not(.ui-state-active) > a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.ui-datepicker-trigger {
+    position: relative;
+    top: 6px;
+    width: 22px;
+    height: 24px;
+    margin-left: 3px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.ui-timepicker-trigger {
+    position: relative;
+    top: 6px;
+    margin-left: 3px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+option:hover {
+    color: #FFFFFF;
+    background: #0073CF;
+}
+
+option,
+select {
+    color: #454545;
+    background-color: #FFFFFF;
+}
+
+.leftMargin,
+.marginLeft {
+    margin-left: 10px;
+}
+
+.rightMargin {
+    margin-right: 10px;
+}
+
+.leftPad {
+    padding-left: 10px;
+}
+
+.rightPad {
+    padding-right: 10px;
+}
+
+.floatRight {
+    float: right;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.penskeLogo,
+.coBrandedLogo {
+    float: left;
+    width: 100px;
+    height: 37px;
+    margin: 10px 20px 0 20px;
+}
+
+.cobranded .penskeLogo {
+    width: 70px;
+    height: 25px;
+    padding: 13px 15px 6px 0;
+    margin-top: 15px;
+    margin-right: 0;
+    border-right: 1px solid #F5F5F5;
+}
+
+.coBrandedLogo {
+    margin: 17px 15px 0 15px;
+}
+
+#footer {
+    -webkit-box-sizing: border-box;
+
+/* IE8 hack */
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    min-width: 990px;
+    min-width: 910px\0/;
+    margin-top: 15px;
+    margin-bottom: 1px;
+}
+
+#leftFooter {
+    float: left;
+    color: #666666;
+    font-size: 11px;
+}
+
+#rightFooter {
+    position: relative;
+    float: right;
+    color: #666666;
+    font-size: 11px;
+}
+
+#viewSource,
+#disabledExample {
+    display: none;
+    width: 60%;
+    padding: 5px;
+    border: 5px solid black;
+}
+
+pre {
+    font-family: Arial, Verdana;
+}
+
+#wizardContainer {
+    width: 50%;
+    height: 350px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+span.addRow {
+    margin-bottom: 5px;
+}
+
+.expandedImage {
+    padding-left: 12px;
+    background: url("../images/expanded.png") no-repeat center left;
+}
+
+.collapsedImage {
+    padding-left: 12px;
+    background: url("../images/collapsed.png") no-repeat center left;
+}
+
+/* gets rid of funky border in IE when images are wrapped in anchors*/
+
+a img {
+    border: none;
+}
+
+/* jQuery tablesorter/tablescroll modifications to show our sort images */
+
+table.tablescroll_head > thead > tr > th,
+table.tablesorter > thead > tr > th {
+    height: 35px;
+}
+
+table.tablescroll_body > tbody > tr > td,
+table.tablesorter > tbody > tr > td {
+    height: 35px;
+}
+
+th.headerSortUp,
+th.headerSortDown {
+    padding-right: 6px;
+}
+
+div.tablescroll_wrapper > table.tablescroll_body > tbody > tr > td {
+}
+
+table.tablescroll_head thead tr .headerSortUp {
+    background-image: url(../images/ascending.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+}
+
+table.tablescroll_head thead tr .headerSortDown {
+    background-image: url(../images/descending.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+}
+
+table.tablesorter thead tr .headerSortUp {
+    background-image: url(../images/ascending.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+}
+
+table.tablesorter thead tr .headerSortDown {
+    background-image: url(../images/descending.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+}
+
+/* END jQuery tablesorter/tablescroll modifications to show our sort images */
+
+/* START data tables css mods*/
+
+.sorting_asc {
+    background-image: none !important;
+}
+
+.sorting_asc:after {
+    position: absolute !important;
+    width: 30px !important;
+    height: 17px !important;
+    content: " " !important;
+    background: url("../images/ascending.png") no-repeat center left !important;
+}
+
+.sorting_desc {
+    background-image: none !important;
+}
+
+.sorting_desc:after {
+    position: absolute !important;
+    width: 30px !important;
+    height: 17px !important;
+    content: "" !important;
+    background: url("../images/descending.png") no-repeat center left !important;
+}
+
+div.dataTables_scrollBody > table > thead > tr > th.sorting_desc:after,
+div.dataTables_scrollBody > table > thead > tr > th.sorting_asc:after {
+    background: none !important;
+}
+
+/* END data tables css mods*/
+
+/* The below are modifications to the jQuery UI themeroller CSS for the calendar control */
+
+td > a.ui-state-default {
+    color: #666666 !important;
+    background: none !important;
+    border: none !important;
+}
+
+td > a.ui-state-hover {
+    color: #FFFFFF !important;
+    background: none !important;
+    background-color: #2D73CF !important;
+    border: none !important;
+}
+
+.ui-datepicker-calendar th {
+    color: #454545 !important;
+    font-size: 11px;
+    font-weight: normal;
+    background-color: white !important;
+}
+
+.ui-datepicker-prev > span.ui-icon-circle-triangle-w {
+    background-image: url(../images/previous.png) !important;
+    background-position: 0 !important;
+}
+
+.ui-datepicker-next > span.ui-icon-circle-triangle-e {
+    background-image: url(../images/next.png) !important;
+    background-position: 0 !important;
+}
+
+.ui-datepicker-prev-hover {
+    background: none !important;
+    background-color: #FFFFFF !important;
+    background-image: url(../images/previous.png);
+    background-position: 0;
+    border: 1px solid #FFFFFF !important;
+}
+
+.ui-datepicker-next-hover {
+    background: none !important;
+    background-color: #FFFFFF !important;
+    background-image: url(../images/next.png);
+    background-position: 0;
+    border: 1px solid #FFFFFF !important;
+}
+
+.ui-datepicker-month,
+.ui-datepicker-year {
+    color: #666666;
+}
+
+a.ui-state-hover > span.ui-icon-circle-triangle-w {
+    background-color: #FFFFFF !important;
+    background-image: none;
+}
+
+a.ui-state-hover > span.ui-icon-circle-triangle-e {
+    background-color: #FFFFFF !important;
+    background-image: none;
+}
+
+button.ui-datepicker-close {
+    display: none;
+}
+
+button.ui-datepicker-current {
+    position: relative;
+    top: 50%;
+    left: 35%;
+    color: #2D73CF !important;
+    text-decoration: underline;
+    background: none !important;
+    border: none !important;
+}
+
+div.ui-datepicker-buttonpane {
+    text-align: center;
+    border: none;
+}
+
+div.ui-datepicker-buttonpane > button {
+    position: relative;
+    left: 60px;
+}
+
+td.ui-datepicker-unselectable > span {
+    color: #666666 !important;
+    background: none !important;
+    border: none !important;
+}
+
+div#ui-datepicker-div {
+    margin-top: 3px;
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 0;
+
+       -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+        -ms-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+         -o-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    ;
+    ;
+}
+
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+    width: auto !important;
+}
+
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+    background-color: transparent !important;
+    background-image: none;
+    opacity: 0.35;
+    filter: Alpha(Opacity=35);
+}
+
+.ui-datepicker-current-day,
+.ui-widget-content .ui-datepicker-current-day,
+.ui-widget-content .ui-datepicker-current-day .ui-state-hover,
+.multipicker .ui-widget-content .ui-state-hover {
+    color: #FFFFFF !important;
+    font-weight: bold;
+    background-color: #2D73CF !important;
+}
+
+.ui-datepicker-current-day .ui-state-default,
+.ui-widget-content .ui-datepicker-current-day .ui-state-default {
+    color: #FFFFFF !important;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    color: #454545;
+    font-weight: bold;
+    background-color: #E7E7E7;
+    background-image: none;
+    border: none;
+}
+
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a,
+.ui-state-default a,
+.ui-widget-content .ui-state-default a {
+    color: #454545;
+}
+
+.ui-widget-content a {
+    color: #2D73CF;
+}
+
+/* END jQuery UI calendar control modifications */
+
+/* Used to vertically center images in BOTH IE/FF */
+
+.centerImage {
+    position: relative;
+    top: 2px;
+}
+
+/* CSS to override menu bar, i.e. "Select Language" */
+
+div#header div.menu > ul > li > a {
+    font-size: 11px;
+}
+
+div.menu > ul > li > a {
+    font-size: inherit;
+    text-decoration: underline;
+}
+
+div.menu > ul > li.active > a {
+    text-decoration: none !important;
+}
+
+.active ul a {
+    color: #666666;
+    font-size: inherit;
+    text-decoration: none;
+    background-color: #F3F3F3;
+}
+
+div#header .active ul a {
+    font-size: 11px;
+}
+
+.active a {
+    background-color: #F3F3F3 !important;
+}
+
+.active ul a:hover {
+    text-decoration: underline !important;
+}
+
+/* Decreases the space between items in a menu */
+
+li.active > ul > li > a {
+    margin-top: -8px !important;
+}
+
+div#header .collapsed {
+    background-position: 93px 5px;
+}
+
+.collapsed {
+    padding-right: 11px !important;
+    background-image: url(../images/collapsed.png);
+    background-repeat: no-repeat;
+    background-position: 107px 6px;
+    cursor: pointer;
+}
+
+.collapsed:hover {
+    background-color: white !important;
+}
+
+/* Menu is clicked on and currently expanded */
+
+div#header li.active a.collapsed {
+    background-position: 89px 10px !important;
+}
+
+li.active a.collapsed {
+    padding-right: 13px !important;
+    background-color: #F3F3F3 !important;
+    background-image: url(../images/expanded.png);
+    background-repeat: no-repeat;
+    background-position: 105px 10px !important;
+}
+
+li.active a.collapsed:hover {
+    background-color: #F3F3F3 !important;
+}
+
+li.active a.collapsed {
+    position: relative;
+    background-position: 107px 8px;
+}
+
+div.menu {
+    position: relative;
+    top: -4px;
+}
+
+/* END menu bar CSS */
+
+/* Start custom css for jQuery UI tabs*/
+
+div.ui-tabs-panel {
+    background-color: white !important;
+}
+
+li.ui-state-default {
+    color: #2D73CF !important;
+    background: none !important;
+    background-color: #F3F3F3 !important;
+    border: 0 !important;
+}
+
+li.ui-state-default a {
+    color: #2D73CF !important;
+}
+
+li.ui-tabs-selected {
+    background: none !important;
+    background-color: #2D73CF !important;
+    border: 0 !important;
+}
+
+li.ui-tabs-selected a {
+    color: #FFFFFF !important;
+}
+
+div.ui-tabs > div.ui-tabs-panel {
+    position: relative;
+    top: -1px;
+    margin-left: 3px;
+    border-top: 5px solid #2D73CF;
+}
+
+/* End custom css for jQuery UI tabs*/
+
+/* Class for info/error style modal window */
+
+.infoModal .ui-dialog-titlebar,
+.errorModal .ui-dialog-titlebar {
+    height: 16px;
+    padding: 0;
+    background-image: none;
+}
+
+.infoModal .ui-dialog-title,
+.errorModal .ui-dialog-title {
+    margin: 0;
+}
+
+.ui-dialog .ui-state-hover {
+    background-color: transparent;
+    background-image: none;
+    border: none;
+}
+
+.infoModal .ui-dialog-titlebar {
+    background-color: #2D73CF;
+}
+
+.errorModal .ui-dialog-titlebar {
+    background-color: #C8050A;
+}
+
+.ui-dialog .ui-widget-header .ui-icon {
+    background-image: url("jQueryUI/images/ui-icons_2d73cf_256x240.png");
+}
+
+.errorModal .ui-widget-header .ui-icon,
+.infoModal .ui-widget-header .ui-icon {
+    background-image: url("jQueryUI/images/ui-icons_ffffff_256x240.png");
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    height: 16px;
+    padding: 0;
+}
+
+.errorModal .ui-dialog-titlebar-close,
+.infoModal .ui-dialog-titlebar-close {
+    margin-top: -10px;
+}
+
+.infoModal.ui-corner-all,
+.infoModal .ui-corner-all,
+.errorModal.ui-corner-all,
+.errorModal .ui-corner-all {
+            border-radius: 0;
+
+     -khtml-border-radius: 0;
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+}
+
+.infoModal p,
+.errorModal p {
+    margin-left: 30px;
+}
+
+.infoModal .ui-dialog-content,
+.errorModal .ui-dialog-content {
+    background-repeat: no-repeat;
+    background-position: 1em 1em;
+}
+
+.infoModal .ui-dialog-content {
+    background-image: url(../images/information.png);
+}
+
+.errorModal .ui-dialog-content {
+    background-image: url(../images/warning.png);
+}
+
+.ui-dialog {
+    padding: 0;
+    margin-top: 10%;
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+
+       -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+        -ms-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+         -o-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    ;
+    ;
+}
+
+.errorModal .ui-widget-header,
+.infoModal .ui-widget-header,
+.errorModal.ui-widget-content,
+.infoModal.ui-widget-content {
+    border: none;
+}
+
+.errorModal .ui-dialog-content,
+.infoModal .ui-dialog-content {
+    padding: 1em;
+}
+
+.popupModalMargin {
+    padding-top: 4px;
+}
+
+.dataTables_filter {
+    padding-bottom: 5px;
+}
+
+.dataTables_info {
+    padding-top: 5px;
+}
+
+/* Scrolling portion of DataTable, we do not want to have padding on our "invisibile" th */
+
+div.dataTables_scrollBody > table.dataTable > thead > tr > th {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* File upload*/
+
+.fileInputTextbox {
+    float: left;
+}
+
+.fileInputSpan {
+    position: relative;
+    height: 23px;
+    min-width: 100px;
+    overflow: hidden;
+}
+
+.fileInputHidden {
+    position: absolute;
+    top: -6px;
+    right: 5px;
+    font-size: 23px;
+           opacity: 0;
+        filter: alpha(opacity=0);
+
+    -khtml-opacity: 0;
+    -ms-filter: "alpha(opacity=0)";
+      -moz-opacity: 0;
+}
+
+.fileInputButton {
+    position: relative;
+    top: -2px;
+    margin-left: 3px;
+}
+
+/* End File upload */
+
+/* fix the timepicker to display on top of modal dialogs */
+
+#CP_hourcont {
+    z-index: 999999;
+}
+
+/* "Clearfix" clears all floats within element */
+
+.clearfix:after,
+.clearfix:before {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* "Clear" clears floats for previous sibling elements */
+
+.clear {
+    clear: both;
+}
+
+.spinnerBackground {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1500;
+    display: none;
+    background: #000000 url(jQueryUI/images/ui-bg_flat_100_000000_40x100.png) 50% 50% repeat-x;
+    opacity: 0.20;
+    filter: Alpha(Opacity=20);
+}
+
+.spinnerImage {
+    position: fixed !important;
+    z-index: 2000;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/spinner-large.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -1,0 +1,70 @@
+/* NOTE: These styles are included for example purposes only */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    color: #454545;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.25;
+}
+
+.form.container {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+}
+
+.segment {
+    width: 800px;
+    min-height: 500px;
+    border: 1px solid #C0C0C0;
+    border-radius: 5px;
+}
+
+.short.segment {
+    min-height: 150px;
+}
+
+input[type="text"],
+select {
+    margin-bottom: 0;
+    color: #454545;
+    font-size: 13px;
+    font-style: normal;
+    background-color: #FFFFFF;
+    border: 1px solid #ABABAB;
+}
+
+.primary.button {
+    display: inline-block;
+    height: 26.25px;
+    min-width: 100px;
+    min-height: 16px;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #69BC28;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.secondary.button {
+    display: inline-block;
+    height: 26.25px;
+    min-width: 100px;
+    min-height: 16px;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #2D73CF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
