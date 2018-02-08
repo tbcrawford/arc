@@ -169,8 +169,6 @@ $space-between-field-items: 3px;
             display: grid;
             margin: 3px 0;
 
-            // grid-gap: $grid-gap;
-
             grid-template-columns: repeat(16, 1fr);
             grid-template-rows: repeat(2, auto);
 
@@ -184,6 +182,56 @@ $space-between-field-items: 3px;
 
             img {
                 grid-column: span 1;
+            }
+        }
+
+         > .column {
+            position: relative;
+
+             > .column.group {
+                padding: 10px 0;
+                display: grid;
+                grid-gap: 3px;
+
+
+                 > label {
+                    margin-bottom: 3px;
+                    overflow: hidden;
+                    color: #454545;
+                    font-size: 13px;
+                    font-weight: bold;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+
+            .field {
+                align-items: center;
+                align-content: center;
+                display: grid;
+
+                grid-gap: $space-between-field-items;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, auto);
+
+                label {
+                    overflow: hidden;
+                    color: #454545;
+                    font-size: 13px;
+                    font-weight: bold;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+
+                    grid-column: 1 / -1;
+                }
+
+                input,
+                select,
+                .field-item {
+                    min-width: 20px;
+
+                    grid-column: 1 / -1;
+                }
             }
         }
 
@@ -331,6 +379,31 @@ $space-between-field-items: 3px;
 
         &.padded {
             margin: 13px 0 9px 0;
+        }
+    }
+
+    .bordered {
+        &.right::after {
+            position: absolute;
+            top: 0;
+            right: -7.5px;
+            bottom: 0;
+            display: block;
+            width: 1px;
+            height: 100%;
+            content: "";
+            background: #E7E7E7;
+        }
+        &.left::after {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -7.5px;
+            display: block;
+            width: 1px;
+            height: 100%;
+            content: "";
+            background: #E7E7E7;
         }
     }
 }
