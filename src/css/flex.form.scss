@@ -189,8 +189,9 @@ $space-between-field-items: 3px;
             position: relative;
 
              > .column.group {
-                padding: 10px 0;
                 display: grid;
+                padding: 10px 0;
+
                 grid-gap: 3px;
 
 
@@ -209,9 +210,10 @@ $space-between-field-items: 3px;
                 align-items: center;
                 align-content: center;
                 display: grid;
+                // overflow: auto;
 
                 grid-gap: $space-between-field-items;
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: 1fr;
                 grid-template-rows: repeat(2, auto);
 
                 label {
@@ -228,6 +230,7 @@ $space-between-field-items: 3px;
                 input,
                 select,
                 .field-item {
+                    box-sizing: border-box;
                     min-width: 20px;
 
                     grid-column: 1 / -1;
@@ -240,9 +243,10 @@ $space-between-field-items: 3px;
             align-content: center;
             display: grid;
             margin: 3px 0;
+            // overflow: auto;
 
             grid-gap: $space-between-field-items;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr;
             grid-template-rows: repeat(2, auto);
 
             label {
@@ -259,6 +263,7 @@ $space-between-field-items: 3px;
             input,
             select,
             .field-item {
+                box-sizing: border-box;
                 min-width: 20px;
 
                 grid-column: 1 / -1;
@@ -343,9 +348,10 @@ $space-between-field-items: 3px;
         align-content: center;
         display: grid;
         margin: 3px 0;
+        // overflow: auto;
 
         grid-gap: $space-between-field-items;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(2, auto);
 
         label {
@@ -359,6 +365,8 @@ $space-between-field-items: 3px;
         input,
         select,
         .field-item {
+            box-sizing: border-box;
+
             grid-column: 1 / -1;
         }
     }
@@ -404,6 +412,16 @@ $space-between-field-items: 3px;
             height: 100%;
             content: "";
             background: #E7E7E7;
+        }
+    }
+
+    .align.self {
+        &.right {
+            justify-self: end;
+        }
+
+        &.left {
+            justify-self: start;
         }
     }
 }

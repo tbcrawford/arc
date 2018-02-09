@@ -173,8 +173,8 @@
 }
 
 .flex.form .fields > .column > .column.group {
-  padding: 10px 0;
   display: grid;
+  padding: 10px 0;
   grid-gap: 3px;
 }
 
@@ -193,7 +193,7 @@
   align-content: center;
   display: grid;
   grid-gap: 3px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
 }
 
@@ -210,6 +210,7 @@
 .flex.form .fields > .column .field input,
 .flex.form .fields > .column .field select,
 .flex.form .fields > .column .field .field-item {
+  box-sizing: border-box;
   min-width: 20px;
   grid-column: 1 / -1;
 }
@@ -220,7 +221,7 @@
   display: grid;
   margin: 3px 0;
   grid-gap: 3px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
 }
 
@@ -237,6 +238,7 @@
 .flex.form .fields > .field input,
 .flex.form .fields > .field select,
 .flex.form .fields > .field .field-item {
+  box-sizing: border-box;
   min-width: 20px;
   grid-column: 1 / -1;
 }
@@ -319,7 +321,7 @@
   display: grid;
   margin: 3px 0;
   grid-gap: 3px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
 }
 
@@ -333,6 +335,7 @@
 .flex.form > .field input,
 .flex.form > .field select,
 .flex.form > .field .field-item {
+  box-sizing: border-box;
   grid-column: 1 / -1;
 }
 
@@ -377,5 +380,13 @@
   height: 100%;
   content: "";
   background: #E7E7E7;
+}
+
+.flex.form .align.self.right {
+  justify-self: end;
+}
+
+.flex.form .align.self.left {
+  justify-self: start;
 }
 /*# sourceMappingURL=flex.form.css.map */
