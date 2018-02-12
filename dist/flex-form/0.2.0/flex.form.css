@@ -4,7 +4,6 @@
 
 .flex.form .fields {
   display: grid;
-  margin: 5px 0;
   grid-gap: 15px;
   grid-template-columns: repeat(16, 1fr);
 }
@@ -210,6 +209,7 @@
 
 .flex.form .fields > .column .field input,
 .flex.form .fields > .column .field select,
+.flex.form .fields > .column .field textarea,
 .flex.form .fields > .column .field .field-item {
   box-sizing: border-box;
   min-width: 20px;
@@ -239,6 +239,7 @@
 
 .flex.form .fields > .field input,
 .flex.form .fields > .field select,
+.flex.form .fields > .field textarea,
 .flex.form .fields > .field .field-item {
   box-sizing: border-box;
   min-width: 20px;
@@ -337,6 +338,7 @@
 
 .flex.form > .field input,
 .flex.form > .field select,
+.flex.form > .field textarea,
 .flex.form > .field .field-item {
   box-sizing: border-box;
   grid-column: 1 / -1;

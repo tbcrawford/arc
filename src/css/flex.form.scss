@@ -6,7 +6,7 @@ $space-between-field-items: 3px;
 
     .fields {
         display: grid;
-        margin: 5px 0;
+        // margin: 5px 0;
 
         grid-gap: $space-between-fields;
         grid-template-columns: repeat(16, 1fr);
@@ -24,7 +24,7 @@ $space-between-field-items: 3px;
 
         &.three {
             display: grid;
-            
+
             grid-template-columns: repeat(3, 1fr);
 
              > .inline.field {
@@ -229,6 +229,7 @@ $space-between-field-items: 3px;
 
                 input,
                 select,
+                textarea,
                 .field-item {
                     box-sizing: border-box;
                     min-width: 20px;
@@ -262,6 +263,7 @@ $space-between-field-items: 3px;
 
             input,
             select,
+            textarea,
             .field-item {
                 box-sizing: border-box;
                 min-width: 20px;
@@ -364,6 +366,7 @@ $space-between-field-items: 3px;
 
         input,
         select,
+        textarea,
         .field-item {
             box-sizing: border-box;
 
