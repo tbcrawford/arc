@@ -24,7 +24,7 @@ $space-between-field-items: 3px;
 
         &.three {
             display: grid;
-
+            
             grid-template-columns: repeat(3, 1fr);
 
              > .inline.field {
@@ -210,7 +210,7 @@ $space-between-field-items: 3px;
                 align-items: center;
                 align-content: center;
                 display: grid;
-                // overflow: auto;
+                min-width: 0;
 
                 grid-gap: $space-between-field-items;
                 grid-template-columns: 1fr;
@@ -243,7 +243,7 @@ $space-between-field-items: 3px;
             align-content: center;
             display: grid;
             margin: 3px 0;
-            // overflow: auto;
+            min-width: 0;
 
             grid-gap: $space-between-field-items;
             grid-template-columns: 1fr;
@@ -348,7 +348,7 @@ $space-between-field-items: 3px;
         align-content: center;
         display: grid;
         margin: 3px 0;
-        // overflow: auto;
+        min-width: 0;
 
         grid-gap: $space-between-field-items;
         grid-template-columns: 1fr;

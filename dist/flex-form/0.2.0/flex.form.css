@@ -192,6 +192,7 @@
   align-items: center;
   align-content: center;
   display: grid;
+  min-width: 0;
   grid-gap: 3px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
@@ -220,6 +221,7 @@
   align-content: center;
   display: grid;
   margin: 3px 0;
+  min-width: 0;
   grid-gap: 3px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
@@ -320,6 +322,7 @@
   align-content: center;
   display: grid;
   margin: 3px 0;
+  min-width: 0;
   grid-gap: 3px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
