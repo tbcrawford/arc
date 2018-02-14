@@ -3,7 +3,8 @@ var gulp = require('gulp');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 
-var FLEX_FORM_VERSION = "0.2.0";
+var FLEX_FORM_VERSION = "0.3.0";
+var DEV_TEST_VERSION = "dev";
 
 gulp.task('sass', function() {
     return gulp.src('src/scss/flex.form.scss')

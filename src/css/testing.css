@@ -1,0 +1,24 @@
+.outlined.flex.form .field {
+    border: 1px solid slateblue;
+}
+
+.outlined.flex.form .field label {
+    border: 1px solid seagreen;
+}
+
+.outlined.flex.form .field input,
+.outlined.flex.form .field select,
+.outlined.flex.form .field .field-item {
+    border: 1px solid salmon;
+}
+
+.colored.flex.form {
+    background-color: #F1F1F1;
+}
+
+.colored.flex.form .field label,
+.colored.flex.form .field input,
+.colored.flex.form .field select,
+.colored.flex.form .field .field-item {
+    background-color: #FFFFFF;
+}

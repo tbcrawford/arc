@@ -187,6 +187,58 @@ $space-between-field-items: 3px;
          > .column {
             position: relative;
 
+            &.wide {
+                margin: 3px 0;
+                &.one {
+                    grid-column: span 1;
+                }
+                &.two {
+                    grid-column: span 2;
+                }
+                &.three {
+                    grid-column: span 3;
+                }
+                &.four {
+                    grid-column: span 4;
+                }
+                &.five {
+                    grid-column: span 5;
+                }
+                &.six {
+                    grid-column: span 6;
+                }
+                &.seven {
+                    grid-column: span 7;
+                }
+                &.eight {
+                    grid-column: span 8;
+                }
+                &.nine {
+                    grid-column: span 9;
+                }
+                &.ten {
+                    grid-column: span 10;
+                }
+                &.eleven {
+                    grid-column: span 11;
+                }
+                &.twelve {
+                    grid-column: span 12;
+                }
+                &.thirteen {
+                    grid-column: span 13;
+                }
+                &.fourteen {
+                    grid-column: span 14;
+                }
+                &.fifteen {
+                    grid-column: span 15;
+                }
+                &.sixteen {
+                    grid-column: span 16;
+                }
+            }
+
              > .column.group {
                 display: grid;
                 padding: 10px 0;
@@ -438,7 +490,7 @@ $space-between-field-items: 3px;
         }
     }
 
-    .align.self {
+    .self.aligned {
         &.right {
             justify-self: end;
         }
