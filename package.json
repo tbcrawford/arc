@@ -1,0 +1,27 @@
+{
+  "name": "flex-form",
+  "version": "0.2.0",
+  "description": "A minimal form layout framework that uses the css grid and flexbox.",
+  "main": "gulpfile.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbcrawford/flex-form.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tbcrawford/flex-form/issues"
+  },
+  "homepage": "https://github.com/tbcrawford/flex-form#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^3.1.0"
+  }
+}

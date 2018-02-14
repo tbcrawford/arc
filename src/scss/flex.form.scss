@@ -6,7 +6,6 @@ $space-between-field-items: 3px;
 
     .fields {
         display: grid;
-        // margin: 5px 0;
 
         grid-gap: $space-between-fields;
         grid-template-columns: repeat(16, 1fr);
@@ -163,27 +162,27 @@ $space-between-field-items: 3px;
             }
         }
 
-         > .date.field {
-            align-items: center;
-            align-content: center;
-            display: grid;
-            margin: 3px 0;
+        //  > .date.field {
+        //     align-items: center;
+        //     align-content: center;
+        //     display: grid;
+        //     margin: 3px 0;
 
-            grid-template-columns: repeat(16, 1fr);
-            grid-template-rows: repeat(2, auto);
+        //     grid-template-columns: repeat(16, 1fr);
+        //     grid-template-rows: repeat(2, auto);
 
-            label {
-                grid-column: span 16;
-            }
+        //     label {
+        //         grid-column: span 16;
+        //     }
 
-            input {
-                grid-column: span 15;
-            }
+        //     input {
+        //         grid-column: span 15;
+        //     }
 
-            img {
-                grid-column: span 1;
-            }
-        }
+        //     img {
+        //         grid-column: span 1;
+        //     }
+        // }
 
          > .column {
             position: relative;
@@ -243,8 +242,8 @@ $space-between-field-items: 3px;
             align-items: center;
             align-content: center;
             display: grid;
-            margin: 3px 0;
             min-width: 0;
+            margin: 3px 0;
 
             grid-gap: $space-between-field-items;
             grid-template-columns: 1fr;
@@ -270,6 +269,27 @@ $space-between-field-items: 3px;
 
                 grid-column: 1 / -1;
             }
+        }
+    }
+
+    .date.field {
+        align-items: center;
+        align-content: center;
+        display: grid;
+        margin: 3px 0;
+
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-rows: repeat(2, auto);
+        label {
+            grid-column: span 16;
+        }
+
+        input {
+            grid-column: span 15;
+        }
+
+        img {
+            grid-column: span 1;
         }
     }
 
@@ -349,8 +369,8 @@ $space-between-field-items: 3px;
         align-items: center;
         align-content: center;
         display: grid;
-        margin: 3px 0;
         min-width: 0;
+        margin: 3px 0;
 
         grid-gap: $space-between-field-items;
         grid-template-columns: 1fr;
@@ -425,6 +445,19 @@ $space-between-field-items: 3px;
 
         &.left {
             justify-self: start;
+        }
+    }
+
+    .aligned {
+        &.right {
+             > * {
+                justify-self: end;
+            }
+        }
+        &.left {
+             > * {
+                justify-self: start;
+            }
         }
     }
 }
