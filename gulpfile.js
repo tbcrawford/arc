@@ -3,13 +3,15 @@ var gulp = require('gulp');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 
+var FLEX_FORM_VERSION = "0.2.0";
+
 gulp.task('sass', function() {
     return gulp.src('src/scss/flex.form.scss')
         .pipe(sass({
             outputStyle: 'expanded',
             indentWidth: 4
         }).on('error', sass.logError))
-        .pipe(gulp.dest('dist/flex-form/0.2.0'));
+        .pipe(gulp.dest('dist/flex-form/' + FLEX_FORM_VERSION));
 });
 
 gulp.task('sass-min', function() {
@@ -18,7 +20,7 @@ gulp.task('sass-min', function() {
             outputStyle: 'compressed'
         }).on('error', sass.logError))
         .pipe(rename('flex.form.min.css'))
-        .pipe(gulp.dest('dist/flex-form/0.2.0'));
+        .pipe(gulp.dest('dist/flex-form/' + FLEX_FORM_VERSION));
 });
 
 gulp.task('watch', function(done) {
