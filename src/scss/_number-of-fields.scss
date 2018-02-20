@@ -1,0 +1,52 @@
+.arc.form {
+    .fields {
+        &.one {
+            grid-template-columns: 1fr;
+        }
+        &.two {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &.three {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &.four {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        &.five {
+            grid-template-columns: repeat(5, 1fr);
+        }
+        &.six {
+            grid-template-columns: repeat(6, 1fr);
+        }
+        &.seven {
+            grid-template-columns: repeat(7, 1fr);
+        }
+        &.eight {
+            grid-template-columns: repeat(8, 1fr);
+        }
+        &.nine {
+            grid-template-columns: repeat(9, 1fr);
+        }
+        &.ten {
+            grid-template-columns: repeat(10, 1fr);
+        }
+        &.eleven {
+            grid-template-columns: repeat(11, 1fr);
+        }
+        &.twelve {
+            grid-template-columns: repeat(12, 1fr);
+        }
+        &.thirteen {
+            grid-template-columns: repeat(13, 1fr);
+        }
+        &.fourteen {
+            grid-template-columns: repeat(14, 1fr);
+        }
+        &.fifteen {
+            grid-template-columns: repeat(15, 1fr);
+        }
+        &.sixteen {
+            grid-template-columns: repeat(16, 1fr);
+        }
+    }
+}

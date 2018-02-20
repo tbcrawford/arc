@@ -4,6 +4,8 @@ var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 
 var FLEX_FORM_VERSION = "0.3.0";
+var ARC_VERSION = "0.1.0";
+
 var DEV_TEST_VERSION = "dev";
 
 gulp.task('sass', function() {
@@ -24,8 +26,18 @@ gulp.task('sass-min', function() {
         .pipe(gulp.dest('dist/flex-form/' + FLEX_FORM_VERSION));
 });
 
+gulp.task('arc-min', function() {
+    return gulp.src('src/scss/arc.scss')
+        .pipe(sass({
+            outputStyle: 'compressed'
+        }).on('error', sass.logError))
+        .pipe(rename('arc.min.css'))
+        .pipe(gulp.dest('dist/arc/' + DEV_TEST_VERSION));
+})
+
 gulp.task('watch', function(done) {
     gulp.watch('src/scss/**/*.scss', gulp.series('sass'));
     gulp.watch('src/scss/**/*.scss', gulp.series('sass-min'));
+    gulp.watch('src/scss/**/*.scss', gulp.series('arc-min'));
     done();
 });

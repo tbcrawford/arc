@@ -1,0 +1,66 @@
+// Form margin
+$form-margin-top-bottom: 5px;
+$form-margin-left-right: 11px;
+
+// Grid gap
+$space-between-fields: 15px;
+$space-between-field-items: 3px;
+
+.arc.form {
+    
+    margin: $form-margin-top-bottom $form-margin-left-right;
+    
+    .fields {
+        display: grid;
+
+        grid-gap: $space-between-fields;  
+        grid-template-columns: repeat(16, 1fr);
+    }
+
+    .field {
+        align-items: center;
+        align-content: center;
+        display: grid;
+        min-width: 0;
+        margin: 3px 0;
+
+        grid-gap: $space-between-field-items;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+
+        label {
+            overflow: hidden;
+            color: #454545;
+            font-size: 13px;
+            font-weight: bold;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            grid-column: span 1;
+        }
+
+        input,
+        select,
+        .field-item {
+            min-width: 0;
+
+            grid-column: span 1;
+        }
+
+        >.datepicker {
+            display: flex;
+
+            input {
+                flex: 1 1 0;
+            }
+
+            img {
+                flex-shrink: 0;
+            }
+        }
+
+    }
+}
+
+@import "custom-width-fields";
+@import "number-of-fields";
