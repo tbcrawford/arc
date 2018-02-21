@@ -19,44 +19,46 @@ $space-between-field-items: 3px;
 
     .field {
         align-items: center;
-        align-content: center;
-        display: grid;
+        display: flex;
         min-width: 0;
         margin: 3px 0;
+        flex-flow: row wrap;
 
-        grid-gap: $space-between-field-items;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, auto);
+        &::after {
+            content: '';
+            width: 100%;
+            order: 1;
+        }
 
         label {
-            overflow: hidden;
             color: #454545;
             font-size: 13px;
             font-weight: bold;
             text-overflow: ellipsis;
             white-space: nowrap;
-
-            grid-column: span 1;
+            margin-bottom: 3px;
+            min-width: 0;
+            order: 0;
+            flex: 1;
         }
 
         input,
         select,
         .field-item {
             min-width: 0;
-
-            grid-column: span 1;
+            order: 2;
+            flex: 1;
         }
 
-        >.datepicker {
-            display: flex;
+        img {
+            order: 3;
+        }
 
-            input {
-                flex: 1 1 0;
-            }
-
-            img {
-                flex-shrink: 0;
-            }
+        .field,
+        .fields {
+            flex: auto;
+            margin: 0;
+            min-width: 0;
         }
 
     }
