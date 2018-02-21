@@ -1,0 +1,20 @@
+.arc.form {
+    .column {
+        position: relative;
+         > .column.group {
+            display: grid;
+            padding: 10px 0;
+
+             > label {
+                margin-bottom: 3px;
+                margin-bottom: 3px;
+                overflow: hidden;
+                color: #454545;
+                font-size: 13px;
+                font-weight: bold;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+}

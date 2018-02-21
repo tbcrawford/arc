@@ -7,62 +7,172 @@ $space-between-fields: 15px;
 $space-between-field-items: 3px;
 
 .arc.form {
-    
     margin: $form-margin-top-bottom $form-margin-left-right;
-    
+
     .fields {
         display: grid;
+        margin: 3px 0;
 
-        grid-gap: $space-between-fields;  
+        grid-gap: $space-between-fields;
         grid-template-columns: repeat(16, 1fr);
+
+        .field ~ .checkbox.field * {
+            position: relative;
+            top: 10px;
+        }
+    }
+
+    .equal.width.fields {
+        display: flex;
+        margin: 3px 0;
+
+        .field:not(:first-child) {
+            margin-left: 15px;
+        }
+        
+        .field {
+            flex: 1 1 auto;
+        }
     }
 
     .field {
         align-items: center;
+        flex-flow: row wrap;
         display: flex;
         min-width: 0;
         margin: 3px 0;
-        flex-flow: row wrap;
 
         &::after {
-            content: '';
-            width: 100%;
             order: 1;
+            width: 100%;
+            content: "";
         }
 
         label {
+            flex: 1;
+            order: 0;
+            min-width: 0;
+            margin: 0 0 3px 0;
             color: #454545;
             font-size: 13px;
             font-weight: bold;
             text-overflow: ellipsis;
             white-space: nowrap;
-            margin-bottom: 3px;
-            min-width: 0;
-            order: 0;
-            flex: 1;
         }
 
-        input,
         select,
-        .field-item {
-            min-width: 0;
-            order: 2;
+        textarea,
+        .field-item,
+        input[type=text],
+        button[type=button] {
             flex: 1;
+            order: 2;
         }
 
+        select,
+        textarea,
+        input[type=text] {
+            min-width: 0;
+        }
+
+        // Handles any nested field(s)
+        .field,
+        .fields {
+            flex: 1 1 auto;
+            min-width: 0;
+            margin: 0;
+            align-items: unset;
+            align-content: unset;
+        }
+    }
+
+    .post.field {
+        flex: 0 1 auto !important;
+        display: flex;
+        margin-left: 5px;
+
+        button {
+            flex: 0 1 auto !important;
+        }
+    }
+
+    .date.field {
         img {
             order: 3;
         }
+    }
 
-        .field,
-        .fields {
-            flex: auto;
-            margin: 0;
-            min-width: 0;
+    .checkbox.field {
+        align-items: center;
+        align-content: center;
+        display: flex;
+        min-height: 32px;
+
+        &::after {
+            width: 0;
         }
 
+        button[type=button] {
+            flex: 0 1 auto;
+        }
+
+        label {
+            margin-bottom: 0;
+            margin-left: 3px;
+            color: #454545;
+            font-size: 13px;
+            font-weight: normal;
+            cursor: pointer;
+            -webkit-user-select: none;
+               -moz-user-select: none;
+                -ms-user-select: none;
+                    user-select: none;
+        }
+
+        a,
+        button,
+        input[type=button] {
+            margin-left: auto;
+        }
+
+        input[type=radio],
+        input[type=checkbox] {
+            margin-left: 1px;
+        }
+    }
+
+    .button.field {
+        align-items: center;
+        align-content: center;
+        justify-content: flex-end;
+        display: flex;
+        min-height: 32px;
+
+        &.left {
+            justify-content: flex-start;
+        }
+
+        .left {
+            margin-right: auto;
+        }
+
+        .right {
+            margin-left: auto;
+        }
+
+        input[type=button]:not(:last-child),
+        button:not(:last-child),
+        a:not(:last-child) {
+            margin-right: 5px;
+        }
+
+        button {
+            flex: 0;
+        }
     }
 }
 
+@import "form-utils";
+@import "form-column-group";
 @import "custom-width-fields";
 @import "number-of-fields";

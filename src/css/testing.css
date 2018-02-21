@@ -27,7 +27,7 @@
     border: 1px solid black;
 }
 
-.field {
+/* .field {
     display: flex;
     flex-flow: row wrap;
 
@@ -41,7 +41,6 @@
 }
 
 .field label {
-    /* overflow: hidden; */
     order: 0;
     min-width: 0;
     white-space: nowrap;
@@ -58,7 +57,7 @@
 
 .field img {
     order: 3;
-}
+} */
 
 .test.container {
     margin: 5px 11px;

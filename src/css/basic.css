@@ -10,19 +10,17 @@ body {
     line-height: 1.25;
 }
 
-.form.container {
-    align-items: center;
-    align-content: center;
+.container {
     justify-content: center;
     display: flex;
-    height: 100%;
 }
 
 .segment {
-    width: 800px;
-    min-height: 500px;
-    border: 1px solid #C0C0C0;
-    border-radius: 5px;
+    width: 960px;
+    border-width: 0 1px 0 1px;
+    border-style: none solid none solid;
+    border-color: #C0C0C0;
+    padding: 1.5em 3em;
 }
 
 .short.segment {
@@ -40,11 +38,10 @@ select {
 }
 
 .primary.button {
-    display: inline-block;
+    display: flex;
     height: 26.25px;
     min-width: 100px;
     min-height: 16px;
-    padding: 5px;
     color: #FFFFFF;
     font-size: 13px;
     font-weight: bold;
@@ -52,14 +49,14 @@ select {
     border: none;
     outline: none;
     cursor: pointer;
+    justify-content: center;
 }
 
 .secondary.button {
-    display: inline-block;
+    display: flex;
     height: 26.25px;
     min-width: 100px;
     min-height: 16px;
-    padding: 5px;
     color: #FFFFFF;
     font-size: 13px;
     font-weight: bold;
@@ -67,6 +64,7 @@ select {
     border: none;
     outline: none;
     cursor: pointer;
+    justify-content: center;
 }
 
 *,

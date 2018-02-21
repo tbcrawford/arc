@@ -1,0 +1,70 @@
+.arc.form {
+    .dividing.header {
+        padding: 3px 0;
+        margin: 5px 0;
+        color: #454545;
+        font-size: 13px;
+        font-weight: bold;
+        border-bottom: 1px solid #E7E7E7;
+    }
+
+    .divider {
+        width: 100%;
+        height: 1px;
+        background-color: #E7E7E7;
+
+        &.padded {
+            margin: 13px 0 9px 0;
+        }
+    }
+
+    .bordered {
+        &.right::after {
+            position: absolute;
+            top: 0;
+            right: -7.5px;
+            bottom: 0;
+            display: block;
+            width: 1px;
+            height: 100%;
+            content: '';
+            background: #E7E7E7;
+        }
+
+        &.left::after {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -7.5px;
+            display: block;
+            width: 1px;
+            height: 100%;
+            content: '';
+            background: #E7E7E7;
+        }
+    }
+
+    .self.aligned {
+        &.right {
+            justify-self: end;
+        }
+        &.left {
+            justify-self: start;
+        }
+    }
+
+    .aligned {
+        &.right {
+            justify-content: end;
+             > * {
+                justify-self: end;
+            }
+        }
+        &.left {
+            justify-content: start;
+             > * {
+                justify-self: start;
+            }
+        }
+    }
+}
