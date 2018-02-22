@@ -16,6 +16,14 @@
         &.padded {
             margin: 13px 0 9px 0;
         }
+
+        &.evenly.padded {
+            margin: 9px 0;
+        }
+
+        &.lightly.padded {
+            margin: 3px 0;
+        }
     }
 
     .bordered {

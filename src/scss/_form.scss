@@ -11,7 +11,7 @@ $space-between-field-items: 3px;
 
     .fields {
         display: grid;
-        margin: 3px 0;
+        padding: 3px 0;
 
         grid-gap: $space-between-fields;
         grid-template-columns: repeat(16, 1fr);
@@ -20,11 +20,19 @@ $space-between-field-items: 3px;
             position: relative;
             top: 10px;
         }
+
+        > .field {
+            padding: 0;
+        }
+    }
+
+    .inline.fields {
+        display: flex;
     }
 
     .equal.width.fields {
         display: flex;
-        margin: 3px 0;
+        padding: 3px 0;
 
         .field:not(:first-child) {
             margin-left: 15px;
@@ -35,12 +43,21 @@ $space-between-field-items: 3px;
         }
     }
 
+    .row {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        min-width: 0;
+        padding: 3px 0;
+    }
+
     .field {
         align-items: center;
         flex-flow: row wrap;
         display: flex;
         min-width: 0;
-        margin: 3px 0;
+        padding: 3px 0;
+        flex: 1;
 
         &::after {
             order: 1;
@@ -49,7 +66,6 @@ $space-between-field-items: 3px;
         }
 
         label {
-            flex: 1;
             order: 0;
             min-width: 0;
             margin: 0 0 3px 0;
@@ -58,6 +74,8 @@ $space-between-field-items: 3px;
             font-weight: bold;
             text-overflow: ellipsis;
             white-space: nowrap;
+            overflow: hidden;
+            cursor: text;
         }
 
         select,
@@ -80,9 +98,7 @@ $space-between-field-items: 3px;
         .fields {
             flex: 1 1 auto;
             min-width: 0;
-            margin: 0;
-            align-items: unset;
-            align-content: unset;
+            padding: 0;
         }
     }
 
@@ -117,8 +133,7 @@ $space-between-field-items: 3px;
         }
 
         label {
-            margin-bottom: 0;
-            margin-left: 3px;
+            margin: 0 0 0 3px;
             color: #454545;
             font-size: 13px;
             font-weight: normal;
