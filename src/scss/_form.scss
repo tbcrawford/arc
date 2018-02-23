@@ -37,7 +37,7 @@ $space-between-field-items: 3px;
         .field:not(:first-child) {
             margin-left: 15px;
         }
-        
+
         .field {
             flex: 1 1 auto;
         }
@@ -96,6 +96,8 @@ $space-between-field-items: 3px;
         // Handles any nested field(s)
         .field,
         .fields {
+            align-items: unset;
+            align-content: unset;
             flex: 1 1 auto;
             min-width: 0;
             padding: 0;
@@ -183,6 +185,33 @@ $space-between-field-items: 3px;
 
         button {
             flex: 0;
+        }
+    }
+
+    .inline.field {
+        align-items: center;
+        align-content: center;
+        display: flex;
+        min-height: 32px;
+        overflow: auto;
+
+        label {
+            flex: 0 1 auto;
+            margin-right: 5px;
+            color: #454545;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        
+        input,
+        select,
+        .field-item {
+            flex: 1;
+            min-width: 0;
+        }
+
+        &::after {
+            width: 0;
         }
     }
 }
