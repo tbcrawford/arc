@@ -66,9 +66,3 @@ select {
     cursor: pointer;
     justify-content: center;
 }
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}

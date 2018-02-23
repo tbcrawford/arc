@@ -1,63 +1,31 @@
-.outlined.flex.form .field {
+.outlined.arc.form .field {
     border: 1px solid slateblue;
 }
 
-.outlined.flex.form .field label {
+.outlined.arc.form .field label {
     border: 1px solid seagreen;
 }
 
-.outlined.flex.form .field input,
-.outlined.flex.form .field select,
-.outlined.flex.form .field .field-item {
+.outlined.arc.form .field input,
+.outlined.arc.form .field select,
+.outlined.arc.form .field .field-item {
     border: 1px solid salmon;
 }
 
-.colored.flex.form {
+.colored.arc.form {
     background-color: #F1F1F1;
 }
 
-.colored.flex.form .field label,
-.colored.flex.form .field input,
-.colored.flex.form .field select,
-.colored.flex.form .field .field-item {
+.colored.arc.form .field label,
+.colored.arc.form .field input,
+.colored.arc.form .field select,
+.colored.arc.form .field .field-item {
     background-color: #FFFFFF;
 }
 
 .outlined {
     border: 1px solid black;
 }
-
-/* .field {
-    display: flex;
-    flex-flow: row wrap;
-
-    align-items: center;
-}
-
-.field::after {
-    content: '';
-    width: 100%;
-    order: 1;
-}
-
-.field label {
-    order: 0;
-    min-width: 0;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    margin-bottom: 3px;
-    min-width: 0;
-    flex: 1;
-}
-
-.field input {
-    order: 2;
-    flex: 1;
-}
-
-.field img {
-    order: 3;
-} */
 
 .test.container {
     margin: 5px 11px;

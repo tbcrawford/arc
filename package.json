@@ -1,7 +1,7 @@
 {
-  "name": "flex-form",
-  "version": "0.2.0",
-  "description": "A minimal form layout framework that uses the css grid and flexbox.",
+  "name": "arc",
+  "version": "0.1.0",
+  "description": "Arc primarily provides layout structuring for mostly untouched html elements.",
   "main": "gulpfile.js",
   "directories": {
     "example": "example",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tbcrawford/flex-form.git"
+    "url": "git+https://github.com/tbcrawford/arc.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tbcrawford/flex-form/issues"
+    "url": "https://github.com/tbcrawford/arc/issues"
   },
-  "homepage": "https://github.com/tbcrawford/flex-form#readme",
+  "homepage": "https://github.com/tbcrawford/arc#readme",
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-rename": "^1.2.2",
