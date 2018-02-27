@@ -10,16 +10,16 @@ $space-between-field-items: 3px;
     margin: $form-margin-top-bottom $form-margin-left-right;
 
     .fields {
+        align-items: flex-start;
         display: grid;
         padding: 3px 0;
 
         grid-gap: $space-between-fields;
         grid-template-columns: repeat(16, 1fr);
 
-        // This needs modified to not include other checkbox fields next to it
-        .field ~ .checkbox.field * {
+        .field:not(.checkbox) ~ .checkbox.field {
             position: relative;
-            top: 10px;
+            top: 9px;
         }
 
          > .field {
@@ -67,6 +67,7 @@ $space-between-field-items: 3px;
         &::after {
             order: 1;
             width: 100%;
+            height: 0;
             content: "";
         }
 
@@ -126,8 +127,9 @@ $space-between-field-items: 3px;
     }
 
     .checkbox.field {
-        align-items: center;
+        align-self: center;
         align-content: center;
+        align-items: center;
         display: flex;
         min-height: 32px;
 
@@ -161,6 +163,7 @@ $space-between-field-items: 3px;
         input[type=radio],
         input[type=checkbox] {
             margin-left: 1px;
+            cursor: pointer;
         }
     }
 

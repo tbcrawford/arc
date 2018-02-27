@@ -9,10 +9,16 @@
 }
 
 .arc.form .fields {
+    align-items: flex-start;
     display: grid;
     padding: 3px 0;
     grid-gap: 15px;
     grid-template-columns: repeat(16, 1fr);
+}
+
+.arc.form .fields .field:not(.checkbox) ~ .checkbox.field {
+    position: relative;
+    top: 9px;
 }
 
 .arc.form .fields > .field {
@@ -60,6 +66,7 @@
 .arc.form .field::after {
     order: 1;
     width: 100%;
+    height: 0;
     content: "";
 }
 
@@ -115,8 +122,9 @@
 }
 
 .arc.form .checkbox.field {
-    align-items: center;
+    align-self: center;
     align-content: center;
+    align-items: center;
     display: flex;
     min-height: 32px;
 }
@@ -151,6 +159,7 @@
 .arc.form .checkbox.field input[type=radio],
 .arc.form .checkbox.field input[type=checkbox] {
     margin-left: 1px;
+    cursor: pointer;
 }
 
 .arc.form .button.field {
