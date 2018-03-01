@@ -17,10 +17,10 @@ body {
 
 .segment {
     width: 960px;
-    border-width: 0 1px 0 1px;
-    border-style: none solid none solid;
-    border-color: #C0C0C0;
     padding: 1.5em 3em;
+    border-color: #C0C0C0;
+    border-style: none solid none solid;
+    border-width: 0 1px 0 1px;
 }
 
 .short.segment {
@@ -38,6 +38,7 @@ select {
 }
 
 .primary.button {
+    justify-content: center;
     display: flex;
     height: 26.25px;
     min-width: 100px;
@@ -49,10 +50,10 @@ select {
     border: none;
     outline: none;
     cursor: pointer;
-    justify-content: center;
 }
 
 .secondary.button {
+    justify-content: center;
     display: flex;
     height: 26.25px;
     min-width: 100px;
@@ -64,5 +65,15 @@ select {
     border: none;
     outline: none;
     cursor: pointer;
-    justify-content: center;
+}
+
+.arc.grid {
+    background-color: #F7F7F7;
+    border: 1px solid #C0C0C0;
+}
+
+.wide.column {
+    height: 50px;
+    background-color: rgba(42, 48, 59, 0.9);
+    border: 1px solid #E0E0E0;
 }

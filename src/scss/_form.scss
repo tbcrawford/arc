@@ -31,7 +31,11 @@ $space-between-field-items: 3px;
         display: flex;
 
          > .field {
-            flex: 1 1 auto;
+            flex: 0 1 auto;
+        }
+
+         > .field:not(:last-child) {
+             margin-right: $space-between-fields;
         }
     }
 
@@ -127,9 +131,9 @@ $space-between-field-items: 3px;
     }
 
     .checkbox.field {
-        align-self: center;
-        align-content: center;
         align-items: center;
+        align-content: center;
+        align-self: center;
         display: flex;
         min-height: 32px;
 
@@ -142,7 +146,6 @@ $space-between-field-items: 3px;
         }
 
         label {
-            flex: 1;
             margin: 0 0 0 3px;
             color: #454545;
             font-size: 13px;

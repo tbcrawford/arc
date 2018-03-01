@@ -1,2 +1,69 @@
 .arc.grid {
+
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-gap: 1.231rem;
+
+    .row {
+        grid-column: span 16;
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1.231rem;
+    }
+
+    .column {
+        &.wide {
+            &.one {
+                grid-column: span 1;
+            }
+            &.two {
+                grid-column: span 2;
+            }
+            &.three {
+                grid-column: span 3;
+            }
+            &.four {
+                grid-column: span 4;
+            }
+            &.five {
+                grid-column: span 5;
+            }
+            &.six {
+                grid-column: span 6;
+            }
+            &.seven {
+                grid-column: span 7;
+            }
+            &.eight {
+                grid-column: span 8;
+            }
+            &.nine {
+                grid-column: span 9;
+            }
+            &.ten {
+                grid-column: span 10;
+            }
+            &.eleven {
+                grid-column: span 11;
+            }
+            &.twelve {
+                grid-column: span 12;
+            }
+            &.thirteen {
+                grid-column: span 13;
+            }
+            &.fourteen {
+                grid-column: span 14;
+            }
+            &.fifteen {
+                grid-column: span 15;
+            }
+            &.sixteen {
+                grid-column: span 16;
+            }
+        }
+    }
+
+
 }
