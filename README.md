@@ -12,4 +12,4 @@ Access to the examples will be simplified in the near future.
 
 ### Accessing the Examples
 Using the following URL, you can view examples. Developer tools, or looking at the source code in the example folder may be necessary to see how to use the provided css classes.
-`https://tbcrawford.github.io/arc/example/fields.html`
+https://tbcrawford.github.io/arc/example/fields.html
