@@ -12,7 +12,7 @@ gulp.task('arc', function() {
             outputStyle: 'expanded',
             indentWidth: 4
         }).on('error', sass.logError))
-        .pipe(gulp.dest('dist/arc/' + DEV_TEST_VERSION));
+        .pipe(gulp.dest('dist/arc/' + ARC_VERSION));
 });
 
 gulp.task('arc-min', function() {
@@ -21,7 +21,7 @@ gulp.task('arc-min', function() {
             outputStyle: 'compressed'
         }).on('error', sass.logError))
         .pipe(rename('arc.min.css'))
-        .pipe(gulp.dest('dist/arc/' + DEV_TEST_VERSION));
+        .pipe(gulp.dest('dist/arc/' + ARC_VERSION));
 });
 
 gulp.task('watch', function(done) {
