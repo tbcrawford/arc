@@ -98,8 +98,8 @@
 
 .arc.form .field .field,
 .arc.form .field .fields {
-    align-items: unset;
-    align-content: unset;
+    align-items: center;
+    align-content: center;
     flex: 1 1 auto;
     min-width: 0;
     padding: 0;
@@ -199,7 +199,7 @@
 
 .arc.form .inline.field label {
     flex: 0 1 auto;
-    margin-right: 5px;
+    margin: 2px 5px 0 0;
     color: #454545;
     font-size: 13px;
     font-weight: bold;
@@ -437,4 +437,82 @@
 
 .arc.form .fields.sixteen {
     grid-template-columns: repeat(16, 1fr);
+}
+
+.arc.grid {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-gap: 1.231rem;
+}
+
+.arc.grid .row {
+    grid-column: span 16;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1.231rem;
+}
+
+.arc.grid .column.wide.one {
+    grid-column: span 1;
+}
+
+.arc.grid .column.wide.two {
+    grid-column: span 2;
+}
+
+.arc.grid .column.wide.three {
+    grid-column: span 3;
+}
+
+.arc.grid .column.wide.four {
+    grid-column: span 4;
+}
+
+.arc.grid .column.wide.five {
+    grid-column: span 5;
+}
+
+.arc.grid .column.wide.six {
+    grid-column: span 6;
+}
+
+.arc.grid .column.wide.seven {
+    grid-column: span 7;
+}
+
+.arc.grid .column.wide.eight {
+    grid-column: span 8;
+}
+
+.arc.grid .column.wide.nine {
+    grid-column: span 9;
+}
+
+.arc.grid .column.wide.ten {
+    grid-column: span 10;
+}
+
+.arc.grid .column.wide.eleven {
+    grid-column: span 11;
+}
+
+.arc.grid .column.wide.twelve {
+    grid-column: span 12;
+}
+
+.arc.grid .column.wide.thirteen {
+    grid-column: span 13;
+}
+
+.arc.grid .column.wide.fourteen {
+    grid-column: span 14;
+}
+
+.arc.grid .column.wide.fifteen {
+    grid-column: span 15;
+}
+
+.arc.grid .column.wide.sixteen {
+    grid-column: span 16;
 }

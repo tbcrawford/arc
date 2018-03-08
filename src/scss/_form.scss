@@ -106,8 +106,8 @@ $space-between-field-items: 3px;
         // Handles any nested field(s)
         .field,
         .fields {
-            align-items: unset;
-            align-content: unset;
+            align-items: center;
+            align-content: center;
             flex: 1 1 auto;
             min-width: 0;
             padding: 0;
@@ -209,7 +209,7 @@ $space-between-field-items: 3px;
 
         label {
             flex: 0 1 auto;
-            margin-right: 5px;
+            margin: 2px 5px 0 0;
             color: #454545;
             font-size: 13px;
             font-weight: bold;
